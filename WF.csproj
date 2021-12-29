@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6EA4EC51-DB48-4212-B48D-86D7BC54CD9C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WF</RootNamespace>
+    <AssemblyName>WF</AssemblyName>
+    <StartupObject>RA.MF</StartupObject>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ApplicationIcon>C:\Users\User\Documents\Projects\RA - копия\Assembly\WINF.ico</ApplicationIcon>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker.Designer.cs">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorBarStyle.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorCellBorderStyle.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorCollection.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorCollectionEventArgs.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorCollectionSortOrder.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorComparer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorEditingMode.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorEditor.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorEditor.Designer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorEditorManager.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorGrid.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorGridSelectedCellStyle.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorHitTestInfo.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorPalette.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorPalettes.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorPickerDialog.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorPickerDialog.Designer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorSlider.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorSliderNubStyle.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorSource.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorWheel.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\GimpPaletteSerializer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\HslColor.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\HsvColor.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\HueColorSlider.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\IColorEditor.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\IPaletteSerializer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\JascPaletteSerializer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\LightnessColorSlider.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\NativeMethods.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\PaintNetPaletteSerializer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\PaletteSerializer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Properties\Resources.Designer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\RgbaChannel.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\RgbaColorSlider.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\SaturationColorSlider.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ScreenColorPicker.cs" />
+    <Compile Include="WinFix\MF.cs" />
+    <Compile Include="WinFix\Options.cs" />
+    <Compile Include="WinFix\About.cs" />
+    <Compile Include="WinFix\Writer\BinWr.cs" />
+    <Compile Include="WinFix\Writer\FOptions.cs" />
+    <Compile Include="WinFix\Writer\Json.cs" />
+    <Compile Include="WinFix\Writer\JsTest.cs" />
+    <Compile Include="WinFix\Writer\OBWriter.cs" />
+    <Compile Include="WinFix\Writer\SerContract.cs" />
+    <Compile Include="WinFix\Enums\AdvancedModes.cs" />
+    <Compile Include="WinFix\Enums\GraphicModes.cs" />
+    <Compile Include="WinFix\Controls\GButton.cs" />
+    <Compile Include="WinFix\Controls\Li_P.cs" />
+    <Compile Include="WinFix\Controls\P_Pal.cs" />
+    <Compile Include="WinFix\Controls\Dropdown.cs" />
+    <Compile Include="WinFix\Controls\MButton.cs" />
+    <Compile Include="WinFix\Fields\Vector.cs" />
+    <Compile Include="WinFix\Fields\System_Metric.cs" />
+    <Compile Include="WinFix\Enums\DType.cs" />
+    <Compile Include="WinFix\Controls\LiScrool.cs" />
+    <Compile Include="WinFix\Fields\NativeMethods.cs" />
+    <Compile Include="WinFix\Controls\HClose.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorEd.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\ColorChangedEventArgs.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\ColorModes.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\Controls\ColorBox2D.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\Controls\ColorBox2D.Designer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\Controls\ColorHexagon.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\Controls\ColorHexagon.Designer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\Controls\ColorSliderVertical.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\Controls\ColorSliderVertical.Designer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\Controls\ColorWheel.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\HslColor.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\MathExtensions.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\ColorPicker\MyClass.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\FormColorPickerDemo.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Properties\Resources.Designer.cs" />
+    <Compile Include="WinFix\Controls\ColorEditor\Properties\Settings.Designer.cs" />
+    <Compile Include="WinFix\Controls\Construction\Dreg.cs" />
+    <Compile Include="WinFix\Controls\Construction\DRegion.cs" />
+    <Compile Include="WinFix\Controls\Construction\MainEditor.cs" />
+    <Compile Include="WinFix\Controls\Construction\SerializableGraphicsPath.cs" />
+    <Compile Include="WinFix\Controls\Construction\WinSet.cs" />
+    <Compile Include="WinFix\Controls\Addins\G2Button.cs" />
+    <Compile Include="WinFix\Controls\Addins\GButton.cs" />
+    <Compile Include="WinFix\Controls\Addins\MF.cs" />
+    <Compile Include="WinFix\Controls\GamePanel.cs" />
+    <Compile Include="WinFix\Controls\GPanel.cs" />
+    <Compile Include="WinFix\PluginM.cs" />
+    <Compile Include="WinFix\CloseM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>Assembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="NAudio">
+      <HintPath>C:\Users\User\Documents\Projects\RA - копия\Assembly\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="PluginBase">
+      <HintPath>C:\Users\User\Documents\Projects\RA - копия\Assembly\PluginBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WinFix\" />
+    <Folder Include="WinFix\Enums\" />
+    <Folder Include="WinFix\Controls\" />
+    <Folder Include="WinFix\Fields\" />
+    <Folder Include="WinFix\Controls\Addins\" />
+    <Folder Include="WinFix\Controls\Events\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorHexagon.Demo.exe" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorHexagon.Demo.exe.config" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorHexagon.Demo.pdb" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorHexagon.Demo.vshost.exe.config" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorPicker.Demo.exe" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorPicker.Demo.exe.config" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorPicker.Demo.pdb" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorPicker.Demo.vshost.exe" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ColorPicker.Demo.vshost.exe.config" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\mscorlib.dll" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\normidna.nlp" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\normnfc.nlp" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\normnfd.nlp" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\normnfkc.nlp" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\normnfkd.nlp" />
+    <None Include="WinFix\Controls\ColorEditor\bin\Debug\ru\mscorlib.resources.dll" />
+    <None Include="WinFix\Controls\ColorEditor\ColorPicker\Controls\ColorSliderVertical.resx" />
+    <None Include="WinFix\Controls\ColorEditor\FormColorPickerDemo.resx" />
+    <None Include="WinFix\Controls\ColorEditor\Properties\Resources.resx" />
+    <None Include="WinFix\Controls\ColorEditor\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WinFix\Controls\ColorEditor\ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorEditor.resx" />
+    <EmbeddedResource Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\ColorPickerDialog.resx" />
+    <EmbeddedResource Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\cyopublic.snk" />
+    <Content Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Cyotek.Windows.Forms.ColorPicker.csproj" />
+    <Content Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Cyotek.Windows.Forms.ColorPicker.ncrunchproject" />
+    <Content Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Resources\cellbackground.png" />
+    <Content Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Resources\eyedropper.cur" />
+    <Content Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Resources\eyedropper.png" />
+    <Content Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Resources\palette-load.png" />
+    <Content Include="WinFix\Controls\ColorEditor\Cyotek\Cyotek.Windows.Forms.ColorPicker\Resources\palette-save.png" />
+  </ItemGroup>
+</Project>

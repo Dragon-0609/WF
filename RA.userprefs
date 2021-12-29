@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="RA.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WinFix\MF.cs">
+    <Files>
+      <File FileName="WinFix\MF.cs" Line="1043" Column="21" />
+      <File FileName="WinFix\Controls\Addins\MF.cs" Line="1" Column="1" />
+      <File FileName="WinFix\Controls\Addins\GButton.cs" Line="1" Column="1" />
+      <File FileName="WinFix\Controls\LiScrool.cs" Line="1" Column="1" />
+      <File FileName="WinFix\Options.cs" Line="1" Column="1" />
+      <File FileName="WinFix\Controls\GPanel.cs" Line="1" Column="1" />
+      <File FileName="WinFix\PluginM.cs" Line="1" Column="1" />
+      <File FileName="WinFix\About.cs" Line="1" Column="1" />
+      <File FileName="WinFix\CloseM.cs" Line="25" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>GetTest\GetTest.csproj</String>
+    <String>E:\Papki\Sayty\Files\2020.04.08\SyntaxRichTextBox_src\SyntaxHighlighter\SyntaxHighlighter.csproj</String>
+    <String>SendTest\SendTest.csproj</String>
+  </DisabledProjects>
+</Properties>
